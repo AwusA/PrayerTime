@@ -135,9 +135,9 @@ function timeLeft(currentTime, targetTime) {
 
     // If the target time is earlier than the current time, assume it's the next day
     if (diff < 0) {
-        // targetDate.setDate(targetDate.getDate() + 1);
-        // diff = targetDate - currentDate;
-		console.log("diff < 0")
+        targetDate.setDate(targetDate.getDate() + 1);
+        diff = targetDate - currentDate;
+		// console.log("diff < 0")
     }
 
     // Convert the difference to hours and minutes
