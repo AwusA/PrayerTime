@@ -135,8 +135,8 @@ function timeLeft(currentTime, targetTime) {
 
     // If the target time is earlier than the current time, assume it's the next day
     if (diff < 0) {
-        targetDate.setDate(targetDate.getDate() + 1);
-        diff = targetDate - currentDate;
+        // targetDate.setDate(targetDate.getDate() + 1);
+        // diff = targetDate - currentDate;
     }
 
     // Convert the difference to hours and minutes
@@ -154,6 +154,7 @@ function timeLeft(currentTime, targetTime) {
     const minutesText = minutesLeft > 0 ? `${minutesLeft} Minute${minutesLeft > 1 ? 's' : ''}` : '';
     
     // Combine hours and minutes text
+
     let result = '';
     if (hoursText && minutesText) {
         result = `${hoursText}, \n ${minutesText}`;
