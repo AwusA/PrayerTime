@@ -137,6 +137,7 @@ function timeLeft(currentTime, targetTime) {
     if (diff < 0) {
         // targetDate.setDate(targetDate.getDate() + 1);
         // diff = targetDate - currentDate;
+		console.log("diff < 0")
     }
 
     // Convert the difference to hours and minutes
